@@ -12,92 +12,106 @@ InterviewIQ is a full-stack AI-powered platform that helps candidates prepare fo
 
 ## 🌟 Features
 
-* 🔐 **Authentication System**
-
-  * JWT-based login & registration
-  * Secure logout with token blacklisting
-
-* 🤖 **AI Interview Report Generator**
-
-  * Generates:
-
-    * Technical Questions
-    * Behavioral Questions
-    * Skill Gaps
-    * Preparation Plan
-  * Prompt-engineered for structured and reliable output
-
-* 📄 **AI Resume Generator**
-
-  * Generates ATS-friendly resumes
-  * Converts HTML → PDF using Puppeteer
-
-* ⚙️ **Robust AI Handling**
-
-  * Prompt-controlled responses
-  * Retry mechanism for failed outputs
-  * JSON cleaning & validation
+* 🔐 Authentication System
+* 🤖 AI Interview Report Generator
+* 📄 AI Resume Generator
+* ⚙️ Robust AI Handling
+* 🔒 JWT Authentication
+* 📊 Skill Gap Analysis
+* 🧠 AI-Powered Preparation Plans
 
 ---
 
 ## 🏗️ Tech Stack
 
 ### Frontend
-
 * React.js
 * Vite
 * Axios
 * Context API
 
 ### Backend
-
 * Node.js
 * Express.js
-* MongoDB (Mongoose)
-* JWT Authentication
+* MongoDB
 
 ### AI Integration
-
 * Google Gemini API
 
 ### Other Tools
-
-* Puppeteer (PDF generation)
-* Multer (file uploads)
+* Puppeteer
+* Multer
 
 ---
 
 ## 🧠 System Architecture
 
-User → Frontend (React) → Backend (Node/Express) → AI (Gemini) → Database (MongoDB)
-
----
-
-## 🔐 Authentication Flow
-
-1. User logs in → JWT stored in cookies
-2. Middleware verifies token on each request
-3. Token blacklist prevents reuse after logout
-
----
-
-## ⚡ Key Challenges Solved
-
-* ❌ Inconsistent AI responses
-  → ✅ Solved using prompt engineering + retry + validation
-
-* ❌ Stateless JWT logout issue
-  → ✅ Implemented token blacklisting
-
-* ❌ AI JSON formatting errors
-  → ✅ Cleaned & parsed responses safely
+User → Frontend → Backend → AI → Database
 
 ---
 
 ## 🚀 Getting Started
 
-### 1. Clone Repository
+### Install Dependencies
 
+#### Backend
 ```bash
-git clone https://github.com/your-username/interview-iq.git
-cd interview-iq
+cd backend
+npm install
+```
+
+#### Frontend
+```bash
+cd frontend
+npm install
+```
+
+---
+
+### Environment Variables
+
+Create a `.env` file in backend:
+
+```env
+PORT=3000
+MONGO_URI=your_mongodb_uri
+JWT_SECRET=your_secret
+GOOGLE_GENAI_API_KEY=your_api_key
+```
+
+---
+
+### Run the Project
+
+#### Backend
+```bash
+npm run dev
+```
+
+#### Frontend
+```bash
+npm run dev
+```
+
+---
+
+## 🌍 Deployment
+
+* Frontend → Netlify
+* Backend → Render
+* Database → MongoDB Atlas
+
+---
+
+## 📌 Future Improvements
+
+* Dashboard for reports
+* Resume templates
+* AI feedback scoring
+* Real-time mock interviews
+
+---
+
+## 💡 Project Vision
+
+InterviewIQ aims to become an intelligent AI career assistant that helps candidates prepare smarter and improve interview performance.
