@@ -2,7 +2,7 @@
 
 ## 🌐 Live Demo
 
-🔗 https://karthiksinterviewiq.netlify.app/
+🔗 https://interviiewiq.netlify.app/
 
 ---
 
